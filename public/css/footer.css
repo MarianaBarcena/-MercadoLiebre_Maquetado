@@ -1,0 +1,18 @@
+.section__footer__home{
+    box-sizing: border-box;
+    background-color: #ebebeb;
+    padding:20px;
+    text-align: center;
+    margin:8px ;
+    border:2px solid #666 ;
+    border-radius:2px;
+}
+.section__footer__home section{
+    margin-bottom: 20px;
+    text-align:center;
+}
+.section__footer__home i{
+   color:#1259c3;
+   font-size: 2rem;
+   margin-bottom:10px;
+}

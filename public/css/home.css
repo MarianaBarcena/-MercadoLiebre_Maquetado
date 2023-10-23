@@ -1,0 +1,24 @@
+.main__home__nav__banner img {
+    width: 100%;
+    padding:1px;
+
+    }
+    
+    .main__home__nav__Productos p {
+        font-size:18px ;
+    }
+    
+    
+
+    .main__home__nav__Productos img, .main__home__nav__Productos__Ofertas img {
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    display: block; }
+
+    .main__home__nav__Productos__Ofertas__1 img , .main__home__nav__Productos__Ofertas__2 img , .main__home__nav__Productos__Ofertas__3 img , .main__home__nav__Productos__Ofertas__4 img{
+        width: 100%;
+        margin: 0 ;
+        padding:10px;
+        display:block;
+    } 
