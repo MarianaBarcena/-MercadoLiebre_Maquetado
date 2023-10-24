@@ -1,18 +1,22 @@
+/*GENERAL*/
 *{
-
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-    font-family:'roboto';
-    font-size: 16px;
+ margin:0;
+padding:0;
+ box-sizing: border-box;
+ font-family:'roboto';
+font-size: 16px;
 }
+/*Todas las H2*/
 h2{
     font-size: 24px;
+    color:#666;
 }
-h4{
+/*Todas las H3*/
+h3{
     font-size:14px;
+    color:#666;
 }
-
-
-
+p {
+    color: #666;
+}
 

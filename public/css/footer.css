@@ -1,16 +1,21 @@
+/*Cont principal del footer*/
 .section__footer__home{
     box-sizing: border-box;
-    background-color: #ebebeb;
+    background-color: #ffffff;
     padding:20px;
     text-align: center;
-    margin:8px ;
-    border:2px solid #666 ;
+    margin:15px ;
+    border:1px solid #ebebeb ;
     border-radius:2px;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+
 }
+/*Seccion Dentro*/
 .section__footer__home section{
     margin-bottom: 20px;
     text-align:center;
 }
+/*Iconos del footer*/
 .section__footer__home i{
    color:#1259c3;
    font-size: 2rem;

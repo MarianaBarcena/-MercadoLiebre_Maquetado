@@ -1,24 +1,111 @@
+/*img banner*/
+.main__home{
+    background-color:#ebebeb
+}
 .main__home__nav__banner img {
     width: 100%;
-    padding:1px;
 
     }
-    
-    .main__home__nav__Productos p {
-        font-size:18px ;
+    /*Contenedor 1 */
+    .main__home__nav {
+        width: 90%;
+        margin: 10px auto;
     }
-    
-    
-
-    .main__home__nav__Productos img, .main__home__nav__Productos__Ofertas img {
-    width: 100%;
-    margin: 0 auto;
-    padding: 10px;
-    display: block; }
-
-    .main__home__nav__Productos__Ofertas__1 img , .main__home__nav__Productos__Ofertas__2 img , .main__home__nav__Productos__Ofertas__3 img , .main__home__nav__Productos__Ofertas__4 img{
-        width: 100%;
-        margin: 0 ;
+    .main__home__nav__Productos{
+        background-color:#ebebeb
+    }
+/*ARTICLE & OFERTAS , P Y IMG */
+    .main__home__nav__Productos__article , .main__home__nav__Productos__Ofertas {
+        margin:0 15px 10px;
+        border:1px solid #ebebeb;
+        padding:15px;
+        background-color: white;
+    }
+    .main__home__nav__Productos__article p , .main__home__nav__Productos__Ofertas p {
+        font-size:18px;
+    }
+    .main__home__nav__Productos__article img , .main__home__nav__Productos__Ofertas img{
+        width: 90%;
+        margin:0 auto;
         padding:10px;
         display:block;
-    } 
+
+    }
+    /*InfoProduct*/
+     .Info-producto{
+display:block;
+font-size:24px;
+margin-top: 10px;
+border-top: 1px solid #ebebeb;
+padding:15px;
+align-items: center;
+}
+.Info-producto i {
+margin-right: 10px; 
+        }
+    /*Aca termina Todo dentro de Ofertas..*/
+   /* -------------------------------------------------------------------*/
+
+   /*Query celu*/
+ @media screen and (max-width: 375px) {
+h3 {
+ display: none;}
+.header__nav__ul__li__a{
+ display:none;}}
+
+/*Query tablet*/
+ @media (min-width: 376px) {
+.Info-producto{
+display:flex;
+text-align: center;
+gap:10px;
+box-shadow: 0px 0px 10px rgb(100, 100, 100);
+ }
+ .Info-producto {
+    transition: transform 0.3s ease-in-out;
+    transform-origin: center;
+}
+
+.Info-producto:hover {
+    transform: scale(1.1);
+}
+div.burger_menu_div{
+ display:none;}
+
+.main__home__nav__Productos__article img {
+width: 50%; }
+
+.main__home__nav__Productos__article , .main__home__nav__Productos__Ofertas{
+box-shadow: 0px 0px 10px rgb(100, 100, 100);}
+}
+   /*Query mas grande*/
+
+   @media (min-width: 769px) {
+.Info-producto{
+    text-align:center;
+    display:flex;
+    gap:10px;
+    box-shadow: 0px 1px 10px rgb(100, 100, 100);
+}
+.Info-producto {
+    transition: transform 0.3s ease-in-out;
+    transform-origin: center;
+}
+
+.Info-producto:hover {
+    transform: scale(1.1);
+}
+div.burger_menu_div{
+ display:none;}
+.main__home__nav__Productos__article img , .main__home__nav__Productos__Ofertas img {
+ width: 50%;
+ }
+.main__home__nav__Productos__article , .main__home__nav__Productos__Ofertas{
+ box-shadow: 0px 0px 10px rgb(100, 100, 100);
+       }
+       }
+
+
+
+   
+   
