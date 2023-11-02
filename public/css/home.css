@@ -1,110 +1,150 @@
-/*img banner*/
-.main__home{
-    background-color:#ebebeb
+.main__home {
+    background-color: #ebebee;
 }
-.main__home__nav__banner img {
+
+.banner__home img{
     width: 100%;
-
-    }
-    /*Contenedor 1 */
-    .main__home__nav {
-        width: 90%;
-        margin: 10px auto;
-    }
-    .main__home__nav__Productos{
-        background-color:#ebebeb
-    }
-/*ARTICLE & OFERTAS , P Y IMG */
-    .main__home__nav__Productos__article , .main__home__nav__Productos__Ofertas {
-        margin:0 15px 10px;
-        border:1px solid #ebebeb;
-        padding:15px;
-        background-color: white;
-    }
-    .main__home__nav__Productos__article p , .main__home__nav__Productos__Ofertas p {
-        font-size:18px;
-    }
-    .main__home__nav__Productos__article img , .main__home__nav__Productos__Ofertas img{
-        width: 90%;
-        margin:0 auto;
-        padding:10px;
-        display:block;
-
-    }
-    /*InfoProduct*/
-     .Info-producto{
-display:block;
-font-size:24px;
-margin-top: 10px;
-border-top: 1px solid #ebebeb;
-padding:15px;
-align-items: center;
+   
 }
-.Info-producto i {
-margin-right: 10px; 
-        }
-    /*Aca termina Todo dentro de Ofertas..*/
-   /* -------------------------------------------------------------------*/
 
-   /*Query celu*/
- @media screen and (max-width: 375px) {
+.contenedor__productos__visita1 , .contenedor__productosOferta1 , .contenedor__productos__visita2 , .contenedor__productosOferta2{
+    width: 90%;
+    margin: 5px auto ;
+    padding: 10px;
+}
+
+.article__productos {
+    margin:10px ;
+    border:1px solid #ebebee;
+    padding:15px;
+    background-color: #ffff;
+}
+
+.article__productos img {
+    width: 90%;
+    margin:0 auto ;
+    padding:10px;
+    display:block;
+
+}
+.descuento  {
+    font-size: 18px;
+    color:#39b54a;
+}
+.Informacion__producto {
+    border-top: 1px solid #ebebee;
+    padding: 10px;
+}
+.Informacion__producto i {
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+    margin-right: 15px;
+
+}
 h3 {
- display: none;}
-.header__nav__ul__li__a{
- display:none;}}
-
-/*Query tablet*/
- @media (min-width: 376px) {
-.Info-producto{
-display:flex;
-text-align: center;
-gap:10px;
-box-shadow: 0px 0px 10px rgb(100, 100, 100);
- }
- .Info-producto {
-    transition: transform 0.3s ease-in-out;
-    transform-origin: center;
+    display: none;
 }
 
-.Info-producto:hover {
-    transform: scale(1.1);
+/*MEDIA QUERY TABLET */
+@media (min-width: 768px) and (max-width: 1439px){
+    .Informacion__producto {
+        display: flex;
+        text-align: center;
+        gap: 10px;
+        
+    }
+.contenedor__productos__visita1 , .contenedor__productosOferta1 , .contenedor__productos__visita2 , .contenedor__productosOferta2 , .article__productos{
+    margin-top: 15px;
 }
-div.burger_menu_div{
- display:none;}
-
-.main__home__nav__Productos__article img {
-width: 50%; }
-
-.main__home__nav__Productos__article , .main__home__nav__Productos__Ofertas{
-box-shadow: 0px 0px 10px rgb(100, 100, 100);}
+.article__productos img {
+    width: 100%;
+  
 }
-   /*Query mas grande*/
+.article__productos{
+    box-shadow: 0px 0px 10px rgb(100,100,100);
 
-   @media (min-width: 769px) {
-.Info-producto{
-    text-align:center;
+    display:inline-block;
+    width: 46%;
+    gap: 10px;
+}
+.Informacion__producto i {
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+    margin-right: 15px;
+
+}
+h3{
     display:flex;
-    gap:10px;
-    box-shadow: 0px 1px 10px rgb(100, 100, 100);
+    justify-content: center;
 }
-.Info-producto {
-    transition: transform 0.3s ease-in-out;
-    transform-origin: center;
+/*----------- ANIMACION QUE ME ROBE DE INTERNET PARA EL CAMIONCITO ---------*/
+
+.fa-truck-fast {
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  @keyframes moveTruck {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(80px); }
+    100% { transform: translateX(0); }
+  }
+  
+  .animate-truck {
+    animation: moveTruck 4s infinite;
+  }
+  
+  .animate-truck:hover {
+    animation-play-state: paused;
+  }
 }
-.Info-producto:hover {
-    transform: scale(1.1);
-}
-div.burger_menu_div{
- display:none;}
-.main__home__nav__Productos__article img , .main__home__nav__Productos__Ofertas img {
- width: 50%;
- }
-.main__home__nav__Productos__article , .main__home__nav__Productos__Ofertas{
- box-shadow: 0px 0px 10px rgb(100, 100, 100);
-       }
-       }
 
 
+/*MEDIA QUERY DESKTOP*/
+@media (min-width:1440px){
+    .Informacion__producto{
+        display: flex;
+        text-align: center;
+        gap: 10px;
+        
+    }
+    
+    .article__productos img {
+        width: 100%;
 
-   
-   
+}
+.contenedor__productos__visita1 , .contenedor__productosOferta1 , .article__productos{
+    display: flex;
+    justify-content: center;
+}
+.article__productos{
+    box-shadow: 0px 0px 10px rgb(100,100,100);
+    display:inline-block;
+    width: 22%;
+    gap: 0px;
+    justify-content:center ;
+}
+/*Visualizo las h3 que en mobile no se ven */
+h3{
+    display:flex;
+justify-content: center;}
+/*----------- ANIMACION QUE ME ROBE DE INTERNET PARA EL CAMIONCITO ---------*/
+.animate-truck {
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  @keyframes moveTruck {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(80px); }
+    100% { transform: translateX(0); }
+  }
+  
+  .animate-truck {
+    animation: moveTruck 4s infinite;
+  }
+  
+  .animate-truck:hover {
+    animation-play-state: paused;
+  }
+}
