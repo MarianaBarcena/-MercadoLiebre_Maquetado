@@ -5,6 +5,10 @@ padding:0;
  box-sizing: border-box;
  font-family:'roboto';
 font-size: 16px;
+
+}
+.body{
+    background-color: #d6d6d6;
 }
 /*Todas las H2*/
 h2{

@@ -1,0 +1,8 @@
+.userRegistrationForm {
+    padding:30px;
+    margin:30px;
+    display: flex;
+    justify-content: center;
+    width: 450px;
+
+}
