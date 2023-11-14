@@ -124,11 +124,23 @@ h3{
     width: 22%;
     gap: 0px;
     justify-content:center ;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Sombra inicial */
+    transition: box-shadow 0.3s ease-in-out;
 }
 /*Visualizo las h3 que en mobile no se ven */
-h3{
-    display:flex;
+.article__productos h3{
+    display: none;
+    transition: display 0.3s ease-in-out;
 justify-content: center;}
+
+.article__productos:hover h3 {
+    display: block;
+}
+.article__productos:hover {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5); /* Sombra aumentada al pasar el mouse */
+}
+
+
 /*----------- ANIMACION QUE ME ROBE DE INTERNET PARA EL CAMIONCITO ---------*/
 .animate-truck {
     transition: transform 0.2s ease-in-out;
@@ -147,4 +159,13 @@ justify-content: center;}
   .animate-truck:hover {
     animation-play-state: paused;
   }
+ 
+/*camion parte nueva */
+.animate-truck {
+    transition: transform 0.3s ease-in-out;
+}
+
+.animate-truck:hover {
+    transform: rotate(-90deg); 
+}
 }
